@@ -2,6 +2,13 @@ body {
   padding-top: 50px;
   padding-bottom: 0;
 }
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
 .contact-form {
   background-color: #eeeeee;
   padding: 100px 0;
