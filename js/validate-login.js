@@ -36,8 +36,36 @@
         // then we update the form to reflect the results
         showErrors(form, errors || {});
         if (!errors) {
-            showSuccess();
+            login(form.email.value, form.password.value, form.remember.checked);
         }
+    }
+
+    function login(email, password, remember) {
+        if (typeof(Storage) === "undefined") {
+            alert("Please use a different browser!");
+        }
+        if (!localStorage.email) {
+            alert("Please register!");
+        } else {
+            var hash = getHash(password);
+            if (localStorage.pwd === hash) {
+                localStorage.login = remember;
+                sessionStorage.login = true;
+            } else {
+                alert("Password incorrect!");
+            }
+        }
+    }
+
+    function getHash(password) {
+        var hash = 0, i, chr;
+        if (password.length === 0) return hash;
+        for (i = 0; i < password.length; i++) {
+          chr   = password.charCodeAt(i);
+          hash  = ((hash << 5) - hash) + chr;
+          hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
     }
 
     // Updates the inputs with the validation errors
