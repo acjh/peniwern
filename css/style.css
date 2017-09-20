@@ -6,6 +6,9 @@ body {
   position: relative;
   top: -5px;
 }
+.tab-content > .tab-pane {
+  padding-top: 10px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
