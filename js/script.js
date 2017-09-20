@@ -41,7 +41,7 @@
         function logout() {
             localStorage.removeItem("login");
             sessionStorage.clear();
-            location.href = location.href;
+            location.href = "index.html";
         }
     });
 })();
