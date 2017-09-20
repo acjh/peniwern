@@ -192,6 +192,7 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input type="text" class="form-control" name="name" placeholder="Name" aria-describedby="Name">
           </div>
+          <div class="messages"></div>
         </div>
         <label class="sr-only">Email</label>
         <div class="form-group">
@@ -199,6 +200,7 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
             <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="Email">
           </div>
+          <div class="messages"></div>
         </div>
         <label class="sr-only">Website</label>
         <div class="form-group">
@@ -206,9 +208,11 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
             <input type="url" class="form-control" name="website" placeholder="Website" aria-describedby="Website">
           </div>
+          <div class="messages"></div>
         </div>
         <div class="form-group">
           <textarea class="form-control" rows="3" name="comment" placeholder="Comment"></textarea>
+          <div class="messages"></div>
         </div>
         <button type="submit" class="btn btn-block btn-default">Submit</button>
       </form>
@@ -235,8 +239,10 @@
 
     <a id="back-to-top-button" href="#top" class="btn btn-lg"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
+    <script src="lib/validate.js/js/validate.min.js"></script>
     <script src="lib/jquery/js/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/custom-validate.js"></script>
   </body>
 </html>
