@@ -26,5 +26,22 @@
             }
             previousScrollPosition = currentScrollPosition;
         });
+
+        // Configure visibility of .navbar-right
+        var login = (localStorage && localStorage.login) || (sessionStorage && sessionStorage.login);
+        if (login) {
+            $('#login-link').hide();
+            $('#register-link').hide();
+            $('#logout-link').show();
+
+            $('#logout-link').click(function () {
+                logout();
+            });
+        }
+        function logout() {
+            localStorage.clear();
+            sessionStorage.clear();
+            location.href = location.href;
+        }
     });
 })();

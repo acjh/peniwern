@@ -51,6 +51,7 @@
             if (localStorage.pwd === hash) {
                 localStorage.login = remember;
                 sessionStorage.login = true;
+                location.href = "index.html";
             } else {
                 alert("Password incorrect!");
             }
