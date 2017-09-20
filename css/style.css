@@ -1,3 +1,9 @@
+a:disabled,
+a[disabled] {
+  color: #337ab7;
+  cursor: not-allowed;
+  text-decoration: none;
+}
 body {
   padding-top: 50px;
   padding-bottom: 0;
