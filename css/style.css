@@ -6,3 +6,21 @@ body {
   position: relative;
   top: -5px;
 }
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.carousel {
+  height: auto;
+}
+.carousel-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+.carousel-inner > .item {
+  height: auto;
+}
+.carousel-inner > .item > img {
+  position: relative;
+  height: auto;
+}
