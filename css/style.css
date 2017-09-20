@@ -46,6 +46,7 @@ body {
 
 .carousel {
   height: auto;
+  margin-bottom: 10px;
 }
 .carousel-inner {
   max-width: 1000px;
