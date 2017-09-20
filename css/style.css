@@ -1,10 +1,27 @@
 body {
   padding-top: 50px;
 }
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 4px;
+}
 .navbar-brand > img {
   height: 32px;
   position: relative;
   top: -5px;
+}
+.product {
+  text-align: center;
+}
+.product > img {
+  width: 100%;
+  max-width: 300px;
+}
+.product > .caption {
+  color: #555555;
+  font-weight: bold;
 }
 .tab-content > .tab-pane {
   padding-top: 10px;
