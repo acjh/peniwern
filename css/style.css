@@ -80,3 +80,10 @@ body {
   position: relative;
   height: auto;
 }
+
+/* CUSTOMIZE THE SIGNIN
+-------------------------------------------------- */
+
+.form-signin input[type="password"] {
+  margin-bottom: 0;
+}
