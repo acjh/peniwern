@@ -1,12 +1,6 @@
 body {
   padding-top: 50px;
 }
-.card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  padding: 4px;
-}
 .navbar-brand > img {
   height: 32px;
   position: relative;
