@@ -39,7 +39,7 @@
             });
         }
         function logout() {
-            localStorage.clear();
+            localStorage.removeItem("login");
             sessionStorage.clear();
             location.href = location.href;
         }

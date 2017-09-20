@@ -1,4 +1,9 @@
 (function() {
+    if (typeof(Storage) === "undefined") {
+        alert("Please use a different browser!");
+        location.href = "index.html";
+    }
+
     // These are the constraints used to validate the form
     var constraints = {
         email: {
@@ -11,11 +16,18 @@
                 minimum: 5,
                 maximum: 20
             }
+        },
+        "confirm-password": {
+          presence: true,
+          equality: {
+            attribute: "password",
+            message: "^The passwords do not match!"
+          }
         }
     };
 
     // Hook up the form so we can prevent it from being posted
-    var form = document.querySelector(".form-signin");
+    var form = document.querySelector(".form-register");
     form.addEventListener("submit", function(ev) {
         ev.preventDefault();
         handleFormSubmit(form);
@@ -36,26 +48,15 @@
         // then we update the form to reflect the results
         showErrors(form, errors || {});
         if (!errors) {
-            login(form.email.value, form.password.value, form.remember.checked);
+            register(form.email.value, form.password.value);
         }
     }
 
-    function login(email, password, remember) {
-        if (typeof(Storage) === "undefined") {
-            alert("Please use a different browser!");
-        }
-        if (!localStorage.email) {
-            alert("Please register!");
-        } else {
-            var hash = getHash(password);
-            if (localStorage.pwd === hash) {
-                localStorage.login = remember;
-                sessionStorage.login = true;
-                location.href = "index.html";
-            } else {
-                alert("Password incorrect!");
-            }
-        }
+    function register(email, password) {
+        localStorage.email = email;
+        localStorage.pwd = getHash(password);
+        showSuccess();
+        location.href = "index.html";
     }
 
     function getHash(password) {

@@ -1,4 +1,9 @@
 (function() {
+    if (typeof(Storage) === "undefined") {
+        alert("Please use a different browser!");
+        location.href = "index.html";
+    }
+
     // These are the constraints used to validate the form
     var constraints = {
         email: {
@@ -41,14 +46,11 @@
     }
 
     function login(email, password, remember) {
-        if (typeof(Storage) === "undefined") {
-            alert("Please use a different browser!");
-        }
         if (!localStorage.email) {
             alert("Please register!");
         } else {
             var hash = getHash(password);
-            if (localStorage.pwd === hash) {
+            if (localStorage.pwd === String(hash)) {
                 localStorage.login = remember;
                 sessionStorage.login = true;
                 location.href = "index.html";
