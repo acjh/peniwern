@@ -48,6 +48,7 @@
     function login(email, password, remember) {
         if (!localStorage.email) {
             alert("Please register!");
+            location.href = "register.html";
         } else {
             var hash = getHash(password);
             if (localStorage.pwd === String(hash)) {

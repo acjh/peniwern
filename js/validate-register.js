@@ -55,6 +55,7 @@
     function register(email, password) {
         localStorage.email = email;
         localStorage.pwd = getHash(password);
+        sessionStorage.login = true;
         showSuccess();
         location.href = "index.html";
     }
