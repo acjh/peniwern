@@ -4,7 +4,7 @@
         $("a[href='#']").click(function (e) {
             e.preventDefault();
         });
-        $("a:not([href='#'])").click(function (e) {
+        $("a:not([href='#']):not([data-toggle])").click(function (e) {
             $('html, body').animate({
                 scrollTop: $('[id="' + $.attr(this, 'href').substr(1) + '"]').offset().top
             }, 1000);
