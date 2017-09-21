@@ -14,7 +14,7 @@
     * Any of the JavaScript category item: "Carousel", "Togglable tabs"
   * jQuery
     * Form Validation:                     .contact-form, custom-validate.js
-    * jQuery Effects: *?*
+    * jQuery Effects:                      animate(), fadeIn(), fadeOut()
 
 ➔ References taken
   * Target website:   https://peniwern.sg
