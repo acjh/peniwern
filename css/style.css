@@ -72,6 +72,11 @@ body {
   height: auto;
   margin-bottom: 10px;
 }
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  bottom: 0;
+}
 .carousel-inner {
   max-width: 1000px;
   margin: auto;
