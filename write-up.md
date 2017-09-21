@@ -9,9 +9,9 @@
   * Bootstrap
     * Usage of a grid system:              .col (index.html)
     * Responsive Design:                   multiple .col for products and footer (index.html)
-    * Any of the base CSS:                 "Forms" (index.html, login.html, register.html)
+    * Any of the base CSS:                 "Buttons", "Forms" (index.html, login.html, register.html)
     * Any of the components:               "Badges", "Input groups", "Thumbnail" (index.html, login.html, register.html)
-    * Any of the JavaScript category item: "Carousel", "Togglable tabs", "Tooltips" (index.html)
+    * Any of the JavaScript category item: "Carousel", "Modals", "Togglable tabs", "Tooltips" (index.html, js/script.js)
   * jQuery
     * Form Validation:                     .contact-form, .form-signin, .form-register (index.html, login.html, register.html, js/validate-xxx.js)
     * jQuery Effects:                      animate(), fadeIn(), fadeOut() (js/script.js)
