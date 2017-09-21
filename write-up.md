@@ -3,7 +3,7 @@
 ➔ Home page: index.html
 
 ➔ Description of the website
-  * Organization website: This submission is a refreshed look with hopefully better UX (in particular, mobile experience) for peniwern.sg (a relative's site).
+  * Organization website: This submission is a refreshed look with better mobile UX for peniwern.sg, by having a responsive UI and categorization of products.
 
 ➔ Where to locate each element in the website
   * Bootstrap
