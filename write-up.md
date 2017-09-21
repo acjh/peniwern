@@ -7,14 +7,14 @@
 
 ➔ Where to locate each element in the website
   * Bootstrap
-    * Usage of a grid system:              .products
-    * Responsive Design:                   .products
-    * Any of the base CSS:                 "Forms"
-    * Any of the components:               "Input groups", "Thumbnail"
-    * Any of the JavaScript category item: "Carousel", "Togglable tabs", "Tooltips"
+    * Usage of a grid system:              .col (index.html)
+    * Responsive Design:                   multiple .col (index.html)
+    * Any of the base CSS:                 "Forms" (index.html, login.html, register.html)
+    * Any of the components:               "Input groups", "Thumbnail" (index.html, login.html, register.html)
+    * Any of the JavaScript category item: "Carousel", "Togglable tabs", "Tooltips" (index.html)
   * jQuery
-    * Form Validation:                     .contact-form, custom-validate.js
-    * jQuery Effects:                      animate(), fadeIn(), fadeOut()
+    * Form Validation:                     .contact-form, .form-signin, .form-register (index.html, login.html, register.html, js/validate-xxx.js)
+    * jQuery Effects:                      animate(), fadeIn(), fadeOut() (js/script.js)
 
 ➔ References taken
   * Target website:   https://peniwern.sg
