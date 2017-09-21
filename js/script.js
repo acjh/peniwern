@@ -4,13 +4,11 @@
         $("a[href='#']").click(function (e) {
             e.preventDefault();
         });
-        $("a:not([href='#']):not([data-toggle])").click(function (e) {
+        $('.smooth-scroll').click(function (e) {
+            e.preventDefault();
             $('html, body').animate({
                 scrollTop: $('[id="' + $.attr(this, 'href').substr(1) + '"]').offset().top
             }, 1000);
-            if (this === backToTopButton[0]) {
-                e.preventDefault();
-            }
         });
 
         // Configure visibility of #back-to-top-button
