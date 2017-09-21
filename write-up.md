@@ -8,7 +8,7 @@
 ➔ Where to locate each element in the website
   * Bootstrap
     * Usage of a grid system:              .col (index.html)
-    * Responsive Design:                   multiple .col (index.html)
+    * Responsive Design:                   multiple .col for products and footer (index.html)
     * Any of the base CSS:                 "Forms" (index.html, login.html, register.html)
     * Any of the components:               "Badges", "Input groups", "Thumbnail" (index.html, login.html, register.html)
     * Any of the JavaScript category item: "Carousel", "Togglable tabs", "Tooltips" (index.html)
@@ -22,4 +22,4 @@
   * Validate.js docs: https://validatejs.org/
 
 ➔ Any special instruction to take note
-  * *?*
+  * "Login" and "Sign Up" are implemented to demonstrate persistent state in navbar links (I used `localStorage` and `sessionStorage` - no data is collected).
