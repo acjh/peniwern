@@ -8,7 +8,7 @@ body {
   padding-top: 50px;
   padding-bottom: 0;
 }
-*[id]:before {
+.anchor-target:before {
   display: block;
   content: " ";
   margin-top: -75px;
