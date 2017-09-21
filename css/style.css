@@ -1,6 +1,6 @@
 a:disabled,
 a[disabled] {
-  color: #337ab7;
+  color: #555;
   cursor: not-allowed;
   text-decoration: none;
 }

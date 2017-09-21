@@ -41,5 +41,8 @@
             sessionStorage.clear();
             location.href = "index.html";
         }
+
+        // Initialize tooltips
+        $('[data-toggle="tooltip"]').tooltip();
     });
 })();

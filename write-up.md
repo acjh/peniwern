@@ -11,7 +11,7 @@
     * Responsive Design:                   .products
     * Any of the base CSS:                 "Forms"
     * Any of the components:               "Input groups", "Thumbnail"
-    * Any of the JavaScript category item: "Carousel", "Togglable tabs"
+    * Any of the JavaScript category item: "Carousel", "Togglable tabs", "Tooltips"
   * jQuery
     * Form Validation:                     .contact-form, custom-validate.js
     * jQuery Effects:                      animate(), fadeIn(), fadeOut()
